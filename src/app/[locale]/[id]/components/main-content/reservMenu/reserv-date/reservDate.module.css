@@ -1,0 +1,29 @@
+.containerDate{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.containerDate p{
+  margin: 0;
+  white-space: nowrap;     
+  overflow: hidden;        
+  text-overflow: ellipsis; 
+    
+}
+
+.containerDate:active{
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.item, .itemLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+
+   
+}
+.item{
+    border-right: 1px solid black ;
+}

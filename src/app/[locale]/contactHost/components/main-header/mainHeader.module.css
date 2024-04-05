@@ -1,0 +1,19 @@
+.container
+{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leftBlock p{
+    font-size: 18px;
+    font-weight: 700;
+    color: gray;
+}
+
+.image{
+ border-radius: 50%;
+ border: 2px solid rgb(255, 253, 253);
+ box-shadow: 4px 3px 8px rgb(118, 118, 118);
+}

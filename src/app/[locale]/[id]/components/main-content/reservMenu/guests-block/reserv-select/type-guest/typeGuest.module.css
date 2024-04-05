@@ -1,0 +1,41 @@
+
+.block{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.item{
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    width: 60%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+
+   
+}
+.itemLeft{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.btn{
+    border-radius: 50%;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    
+    font-size: 20px;
+    font-weight: 700;
+}
+.itemLeft p{
+    font-size: 20px;
+    font-weight: 700;
+}

@@ -1,0 +1,42 @@
+.container
+{
+display: flex;
+align-items: center;
+padding: 10px;
+}
+.container:hover{
+    background-color: rgb(193, 189, 189);
+    border-radius: 8px;
+    cursor: pointer;
+}
+.containerActive
+{
+display: flex;
+align-items: center;
+padding: 10px;
+background-color: rgb(193, 189, 189);
+}
+
+.messageContainer{
+    height: 50px;
+    padding-left: 10px; 
+}
+.message{
+   width: 250px;
+   overflow: hidden;
+   text-overflow: ellipsis; 
+   white-space: nowrap;  
+   margin: 0;   
+}
+.time{
+    margin: 0;
+    font-weight: 600;
+}
+.img{
+    border-radius: 50%;
+}
+.name{
+    margin: 0;
+    margin-top: -10px;
+    font-weight: 700;
+}

@@ -1,0 +1,14 @@
+.btnStyle {
+margin-left: -10px;
+	border: 1px solid var(--eerieBlack);
+	background-color: var(--gainsboro);
+	padding: 0px;
+	transition: box-shadow 300ms;
+	border-radius: 12px;
+    width: 35px;
+    height:35px;
+    display: none;
+	@media (min-width: 650px) {
+		display: block;
+	}
+}

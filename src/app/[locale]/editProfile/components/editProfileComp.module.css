@@ -1,0 +1,229 @@
+.container1 {
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: var(--var-nunito), serif;
+}
+
+.leftBlock1 {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle1 {
+  width: 230px;
+  height: 230px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.profileHeader {
+  margin-left: 20px;
+  grid-column: span 2;
+}
+
+.button1 {
+  position: absolute;
+  bottom: -8px;
+  width: 120px;
+  background-color: white;
+  color: black;
+  border-radius: 50px 50px 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  justify-content: space-evenly;
+  border: none;
+  font-weight: bold;
+}
+
+.button1 i {
+  font-size: 24px;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+}
+.rightBlock1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+  padding-left: 50px;
+
+}
+
+
+.cell1 {
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 400px;
+  height: 80px;
+  border-radius: 20px;
+}
+
+.cell1 img {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.cell1:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashedBorder {
+  border: 1px dashed #000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.aboutSection {
+  margin-left: 20px;
+  margin-top: auto;
+  grid-column: span 2;
+}
+
+.aboutSection h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.aboutSection p {
+  font-size: 16px;
+}
+
+.aboutSection button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.aboutSection button:hover {
+  background-color: #0056b3;
+}
+
+.readyBut {
+  grid-column: span 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.readyButton {
+  width: 120px;
+  font-size: large;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.readyButton:hover {
+  background-color: black;
+}
+
+@media (max-width: 1150px) {
+  .container1 {
+    justify-content: flex-start;
+    min-height: calc(100vh - 110px);
+    padding-bottom: 110px;
+    overflow: auto;
+  }
+  .rightBlock1 {
+    display: flex; 
+    flex-direction: column; 
+    padding-left: 50px;
+  }
+  .readyBut {
+    align-self: flex-start;
+    width: 100%;
+    padding-left: 20px;
+  }
+  .readyButton {
+    width: 100%;
+  }
+  
+
+}
+
+@media (max-width: 750px) {
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    justify-content: center; 
+    align-items: center;
+    min-height: calc(100vh - 110px);
+    padding-bottom: 110px;
+    overflow: auto;
+    text-align: center;
+    margin: 0px;
+  }
+  .profileHeader {
+    margin-top: 30px;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+  }
+  .leftBlock1 {
+    order: 1;
+    padding: 0px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 0px;
+  }
+  
+  .rightBlock1 {
+    text-align: center;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .readyBut {
+    text-align: center;
+    padding: 10px;
+  }
+  .cell1 {
+    justify-content: center;
+    width: 100%;
+  }
+
+}

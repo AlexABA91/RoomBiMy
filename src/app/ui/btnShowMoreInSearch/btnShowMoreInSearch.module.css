@@ -1,0 +1,13 @@
+.btnShowMore {
+	background-color: black;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 1rem;
+	font-family: var(--gainsboro);
+	position: static;
+	min-width: 200px;
+	min-height: 40px;
+	max-height: 40px;
+	bottom: 10px;
+}

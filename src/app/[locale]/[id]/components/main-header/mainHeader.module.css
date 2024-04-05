@@ -1,0 +1,22 @@
+.container
+{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftBlock{
+    display: none;
+    @media (min-width: 1050px) {
+     display: flex;
+     align-items: center; 
+    } 
+}
+
+.image{
+ margin-bottom: 5px;
+ margin-right: 3px;
+}
+.btn{
+ margin-left: 20px;
+}

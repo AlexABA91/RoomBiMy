@@ -1,0 +1,22 @@
+
+.container{
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  height: 250px;
+  top: 360px;
+  width: 95%;
+  @media (min-width: 300px) { top: 340px;}
+  @media (min-width: 330px) { top: 315px;}
+  @media (min-width: 450px) { top: 280px;}
+  @media (min-width: 550px) { top: 270px;}
+  @media (min-width: 850px) { top: 275px;}
+}
+.item{
+  width: 6%;
+  background-color: black;
+  margin: 1px;
+  z-index: 0;
+}

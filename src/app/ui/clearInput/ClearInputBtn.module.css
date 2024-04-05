@@ -1,0 +1,11 @@
+.main {
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	padding: 2px;
+	border-radius: 100%;
+	z-index: 2;
+}
+.main:hover {
+	background-color: rgba(173, 173, 173, 0.681);
+}

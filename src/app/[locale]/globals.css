@@ -1,0 +1,443 @@
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+	/*Цвета с дизайна добавленные в качестве css переменных*/
+	--eerieBlack: #211e1a;
+	--boyRed: #6f6558;
+	--darkLava: #433d35;
+	--gainsboro: rgb(248, 249, 250);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
+}
+
+body {
+	color: var(--eerieBlack);
+	font-family: var(--var-nunito), sans-serif;
+	background-color: var(--boyRed);
+}
+.header-main {
+	background-color: var(--gainsboro);
+	z-index: 5;
+
+	@media (max-width: 576px) {
+		position: relative;
+	}
+}
+
+.header-Main-sticky {
+	position: sticky;
+	top: 0;
+}
+
+.custom-dropdown-toggle::after {
+	display: none !important;
+}
+
+.link-Reset {
+	text-decoration: none;
+	color: var(--eerieBlack);
+}
+
+/* -----Map----- */
+
+.custom-marker-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.custom-marker-txt {
+	color: black;
+	background-color: rgb(255, 251, 251);
+	box-shadow: 2px 2px 1px rgb(100, 100, 100);
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 20px;
+	padding: 0px 15px;
+}
+
+.tileLayer {
+	text-align: center;
+	font-family: var(--var-Inknut_Antiqua);
+	color: var(--eerieBlack);
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	padding: 5px 0px;
+	margin-top: -150px;
+	margin-left: -160px;
+	background-color: var(--eerieBlack);
+	border: 2px solid rgba(255, 255, 255, 0.991);
+	color: white;
+	border-radius: 8px;
+}
+
+.leaflet-control-attribution a {
+	display: none;
+}
+
+.leaflet-control-attribution {
+	position: relative;
+	top: 100px;
+	left: 5px;
+}
+
+.leaflet-control-attribution span {
+	display: none;
+}
+
+.custom-marker-txt:focus,
+.custom-marker-txt:focus-within,
+.custom-marker-txt:active {
+	background-color: rgb(0, 0, 0);
+	box-shadow: 2px 2px 1px rgb(100, 100, 100);
+	color: white;
+}
+
+.custom-marker-txt:hover {
+	padding: 2px 17px;
+}
+
+/* -------zoom */
+a.leaflet-control-zoom-in span {
+	color: #000000f1;
+	cursor: pointer;
+}
+
+.leaflet-touch .leaflet-bar a:first-child {
+	width: 40px;
+	height: 50px;
+	padding-top: 10px;
+	background-color: white;
+	border-bottom: 2px solid rgb(151, 151, 151);
+}
+
+.leaflet-touch .leaflet-bar a:last-child {
+	width: 40px;
+	height: 50px;
+	padding-top: 10px;
+	background-color: white;
+}
+
+div.leaflet-control-zoom.leaflet-bar.leaflet-control {
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 8px;
+	padding: 1px;
+	background-color: white;
+}
+
+/* -------cardMap */
+div.leaflet-popup-content {
+	margin: 0px;
+	padding: 0px;
+}
+
+div.leaflet-popup-content-wrapper p {
+	margin: 0px;
+	margin-top: 3px;
+	margin-left: 5px;
+	margin-bottom: 3px;
+}
+
+/*/----- btn close */
+a.leaflet-popup-close-button span {
+	display: block;
+	position: relative;
+	background-color: white;
+	text-align: center;
+	top: 20px;
+	right: 20px;
+	width: 30px;
+	height: 30px;
+	padding-top: 2px;
+	border-radius: 20px;
+	color: black;
+	font-weight: 500;
+	font-size: 20px;
+	z-index: 2;
+}
+
+a.leaflet-popup-close-button span:hover {
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51);
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.51);
+}
+
+a.leaflet-popup-close-button span:active {
+	background-color: black;
+	color: rgb(255, 255, 255);
+}
+
+.leaflet-popup-content p {
+	margin: 0px;
+	margin-top: 3px;
+}
+
+.carousel .carousel-indicators button {
+	width: 9px;
+	height: 9px;
+	border-radius: 100%;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+/* Calendar on Search */
+abbr[title] {
+	text-decoration: none !important;
+	cursor: default !important;
+}
+
+.react-calendar {
+	border: none !important;
+}
+
+.react-calendar--doubleView {
+	max-width: 600px !important;
+	width: 100% !important;
+}
+
+.react-calendar__navigation__label {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.react-calendar__navigation__arrow {
+	border-radius: 25px;
+}
+
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+	display: none;
+}
+
+.react-calendar__month-view__weekdays {
+	text-transform: capitalize !important;
+	color: #a0a0a0;
+}
+
+.react-calendar__navigation__label:disabled {
+	background-color: white !important;
+}
+
+.react-calendar__navigation__label {
+	color: black;
+	font-size: 1.3em !important;
+	font-family: var(--var-nunito), sans-serif;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+	visibility: hidden !important;
+}
+
+.react-calendar__month-view__days__day:disabled {
+	background-color: white !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+	color: black !important;
+}
+
+.react-calendar__month-view__days__day--weekend:disabled {
+	color: #a0a0a0 !important;
+}
+
+.react-calendar__tile {
+	border-radius: 20px;
+	padding: 10px 0 10px 0 !important;
+	border: 1px solid white !important;
+	font: inherit !important;
+	font-size: 1.2em !important;
+}
+
+.react-calendar__tile:hover .react-calendar__tile:focus {
+	border: 1px solid black !important;
+	background-color: transparent !important;
+}
+
+.react-calendar__tile--active {
+	background: black !important;
+	color: white !important;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+	background: black !important;
+}
+
+.react-calendar__viewContainer {
+	padding: 0 5% 0 5% !important;
+}
+
+.react-calendar__tile--now:hover {
+	background: #e6e6e6 !important;
+	color: black !important;
+}
+
+.react-calendar__tile--now.react-calendar__tile--now:focus {
+	background: black !important;
+	color: white !important;
+}
+
+.react-calendar__tile--active.react-calendar__tile--active,
+.react-calendar__tile--now.react-calendar__tile--active {
+	background: black !important;
+	color: white !important;
+}
+
+.react-calendar__tile--now {
+	background: white !important;
+	color: black !important;
+}
+
+.react-calendar__tile--rangeEnd {
+	background: black !important;
+	color: white !important;
+}
+
+.page_main__yiKJr {
+	min-height: 20vh !important;
+	padding: 0px !important;
+}
+
+@media (max-width: 768px) {
+	.react-calendar {
+		width: 250px !important;
+	}
+}
+
+.custom-marker-content-page-info-root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70px;
+	height: 70px;
+	background-color: rgba(255, 0, 0, 0.424);
+	border-radius: 50%;
+}
+.custom-marker-content-page-info {
+	width: 40px;
+	height: 40px;
+	background-color: rgb(255, 0, 0);
+	border-radius: 50%;
+	background-image: url('/userInfo/marker.svg');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Calendar datepicker */
+.react-datepicker {
+	border: none !important;
+	font-family: var(--var-nunito), sans-serif;
+}
+
+.react-datepicker__header {
+	background-color: white !important;
+	border-bottom: none !important;
+}
+
+.react-datepicker__current-month {
+	font-size: 1.3em !important;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.react-datepicker__day-name {
+	text-transform: capitalize !important;
+	color: #a0a0a0;
+}
+
+.react-datepicker__day {
+	border-radius: 20px;
+	font-size: 1.2em !important;
+}
+
+.react-datepicker__day:hover {
+	border: 1px solid black !important;
+	background-color: transparent !important;
+}
+
+.react-datepicker__day--selected {
+	background: black !important;
+	color: white !important;
+}
+
+.react-datepicker__day--selected:hover {
+	background: black !important;
+}
+
+.react-datepicker__day--today {
+	background: white !important;
+	color: black !important;
+}
+
+.react-datepicker__day--today:hover {
+	background: #e6e6e6 !important;
+	color: black !important;
+}
+
+.react-datepicker__day--today.react-datepicker__day--today:focus {
+	background: black !important;
+	color: white !important;
+}
+
+.react-datepicker__day--selected.react-datepicker__day--selected,
+.react-datepicker__day--today.react-datepicker__day--selected {
+	background: black !important;
+	color: white !important;
+}
+
+.react-datepicker__day--outside-month {
+	visibility: hidden !important;
+}
+
+.react-datepicker__year-dropdown {
+	background-color: white !important;
+	color: black !important;
+	border: none !important;
+	font-family: var(--var-nunito), sans-serif;
+}
+.react-datepicker__year-dropdown::before,
+.react-datepicker__year-dropdown::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+}
+
+.react-datepicker__year-dropdown::before {
+	top: 10px;
+	transform: translateX(-50%);
+	border-bottom: 5px solid #333;
+}
+
+.react-datepicker__year-dropdown::after {
+	bottom: 10px;
+	transform: translateX(-50%);
+	border-top: 5px solid #333;
+}
+
+.react-datepicker__year-option {
+	cursor: pointer;
+	display: block;
+	font-size: 1.2em !important;
+}
+
+.react-datepicker__year-option:hover {
+	background-color: #e6e6e6 !important;
+	color: black !important;
+}
+
+.react-datepicker__year-option--selected:hover {
+	background: black !important;
+}

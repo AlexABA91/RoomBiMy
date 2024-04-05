@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    position: relative;
+}
+
+.blockLeft{
+    width: 100%;
+    @media (min-width: 750px) {
+        width: 65%
+       }
+}
+.blockRight {
+    width: 0%;
+    height: 500px;
+    position: sticky;
+    top: 150px; 
+    display: none;
+
+    @media (min-width: 750px) {
+        width: 35%;
+	 display: flex;
+     justify-content: end;
+	}
+}
+
+
+.point{
+    display: inline-block;
+    width:  5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 5px;
+    margin-bottom: 2px;
+}
+
+.br{
+    display: block;
+    width: 95%;
+    height: 1px;
+    background-color: rgb(170, 168, 168);
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+
+

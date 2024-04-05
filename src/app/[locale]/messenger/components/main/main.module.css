@@ -1,0 +1,56 @@
+.header{
+    display: none;
+    @media(min-width: 850px)
+    {
+        display: block;
+    }
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.leftBlock{
+    width: 100%;
+    
+    @media(min-width: 800px)
+    {
+        width: 400px;
+    }
+}
+.center{
+    width: 100%;
+    border: 1px solid lightslategray;
+    border-bottom:none ;
+    height: 100vh;
+    padding: 20px;
+    @media(min-width: 800px)
+    {
+        width: calc(100% - 400px);
+    }
+  
+}
+.rightBlock{
+    width: 20%;
+    display: none;
+    @media(min-width: 1200px)
+    {
+        display: block;
+    }
+/* 
+    @media (min-width: 850px)
+    {    width: 35%; }  */
+
+}
+.span{
+    margin: 20px 0px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(117, 117, 115);
+}

@@ -1,0 +1,14 @@
+.btn{
+display: inline-block;
+    border: 2px solid black;
+    border-radius: 9px;
+}
+.br{
+    display: block;
+    height: 1px;
+    width: 95%;
+    background-color: rgb(225, 213, 198);
+}
+.item{
+    margin: 0 20px;
+}
